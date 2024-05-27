@@ -25,8 +25,24 @@ async function notifyOnTelegram(authorization) {
   console.log(response);
 }
 
+async function alertOnAnomalousActivity(authorization) {
+  if (authorization.currencyCode !== "zar") {
+    try {
+      const response = await fetch(process.env.alertNotifier);
+      if (!response.ok) {
+        throw new Error("Network response was not ok " + response.statusText);
+      }
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.error("Error hitting endpoint:", error);
+    }
+  }
+}
+
 // This function runs after a transaction was successful.
 const afterTransaction = async (transaction) => {
   await notifyOnTelegram(transaction);
+  await alertOnAnomalousActivity(transaction);
   console.log(transaction);
 };
