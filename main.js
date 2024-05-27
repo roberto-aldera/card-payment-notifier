@@ -16,7 +16,7 @@ async function notifyOnTelegram(authorization) {
         )} 💸
 💳 Cardholder: ${process.env.cardholder}
 🗃️ Reference: ${authorization.reference}
-🛒 Category: ${authorization.merchant.category.name}
+🛒 Category: ${authorization.merchant.category.name} (${authorization.merchant.category.code})
 📍 Location: ${authorization.merchant.city}`,
       }),
     }
