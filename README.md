@@ -27,6 +27,7 @@ To set up the detection:
 ## Give it a whir 🏎️
 You can test this code with Investec's simulation payments, which should send messages to your Telegram group as shown below.
 When you're ready to test the anomaly detection, change the currency in the simulated payment to anything other than `ZAR` and you should trigger the email alert.
+Note that we're only using the Canarytoken to notify us that something unusual has happened (in the form of a payment in a foreign currency here), the source IP and User-agent are not particularly meaningful for this application.
 
 <img width="471" alt="message" src="https://github.com/roberto-aldera/card-payment-notifier/assets/51328612/23b31eb8-d9fa-4c04-8b9f-16bb4661e136">
 
