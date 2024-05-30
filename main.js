@@ -1,6 +1,6 @@
 async function notifyOnTelegram(authorization) {
   const response = await fetch(
-    process.env.telegramURL + process.env.apiKey + "/sendMessage",
+    "https://api.telegram.org/bot" + process.env.apiKey + "/sendMessage",
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
