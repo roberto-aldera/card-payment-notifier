@@ -30,3 +30,6 @@ When you're ready to test the anomaly detection, change the currency in the simu
 <img width="471" alt="message" src="https://github.com/roberto-aldera/card-payment-notifier/assets/51328612/23b31eb8-d9fa-4c04-8b9f-16bb4661e136">
 
 <img width="701" alt="canarytoken" src="https://github.com/roberto-aldera/card-payment-notifier/assets/51328612/8a4767d8-00b9-461b-98cd-eabecda1cedd">
+
+## Thanks
+Credit to Russell Knight for his [Investec Telegram write-up](https://drive.google.com/file/d/1rnbHtGYngtWP2S3M5TAcCec_GIp30U6j/view).
