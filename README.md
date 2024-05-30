@@ -1,6 +1,7 @@
 # Payment Pinger 💸
 ## What is this?
 It's a short snippet for an [Investec programmable bank card](https://www.investec.com/en_za/banking/tech-professionals/programmable-banking.html) to post to payment details to Telegram for card payments.
+This is super useful if we want visibility on payments from different cards in one place, like if there are multiple card holders linked to a single account.
 Additionally, it includes simple anomaly detection which alerts via email when a non-ZAR transaction takes place. 
 
 ## Setup
