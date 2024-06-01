@@ -12,7 +12,6 @@ Additionally, it includes simple anomaly detection which alerts via email when a
   ```curl https://api.telegram.org/bot\your-api-key/getupdates | jq```
 - Add the contents of `main.js` to your Investec developer IDE portal
 - Modify your `env.json` in the portal to include the
-  - `telegramURL` - `https://api.telegram.org/bot`
   - `apiKey` - from your bot
   - `chatID` - for the group chat
   - `cardholder` - used for inclusion in the sent messages (useful if you've got more than one cardholder linked to your account)
