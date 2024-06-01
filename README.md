@@ -19,7 +19,7 @@ Additionally, it includes simple anomaly detection which alerts via email when a
  
 ### Anomaly detection 🕵️
 This makes use of a [Canarytoken](https://canarytokens.org/generate) to fire off an email as it's a nice quick way to get a notification.
-We could use other alert channels here too, or even just post a more urgently-phrased message to the same Telegram channel.
+We could use other alert channels here too, or even just post a more urgently-phrased message to the same Telegram channel, but the idea is just to provide a proof-of-concept that's easy to extend.
 To set up the detection:
 - Create a **web bug/URL Canarytoken** to use as your notification trigger to be alerted via email (or another channel if you prefer)
 - Drop the Canarytoken's URL in your `env.json` as your `alertNotifier` variable
